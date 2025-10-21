@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>DigitalYesi | Enter</title>
+  <link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap" rel="stylesheet">
+
+  <style>
+    * { margin: 0; padding: 0; box-sizing: border-box; font-family: "Press Start 2P", system-ui; }
+
+    body, html {
+      height: 100%;
+      width: 100%;
+      margin: 0;
+      padding: 0;
+      color: #fff;
+      text-align: center;
+      overflow: hidden;
+      font-family: 'Press Start 2P', system-ui;
+      font-size: 12px;
+
+      background: repeating-linear-gradient(
+        to right,               /* vertical stripes */
+      #000 0px,
+      #000 60px,
+      #1a1a1a 60px,
+      #1a1a1a 120px
+      );
+      background-size: 400% 100%;
+      animation: stripeScroll 12s linear infinite;
+    }
+
+    @keyframes stripeScroll {
+      from {
+        background-position: 0 0;
+      }
+      to {
+      background-position: -160px 0;
+      }
+    }
+
+
+    .overlay {
+      position: relative;
+      z-index: 1;
+      display: flex; flex-direction: column;
+      justify-content: center; align-items: center;
+      height: 100vh;
+    }
+
+    .age-gate {
+      background: rgba(0, 0, 0, 0.7);
+      border: 2px solid #555;
+      border-radius: 10px;
+      padding: 40px 20px;
+      max-width: 400px; width: 90%;
+      box-shadow: 0 0 25px rgba(0,0,0,0.5);
+      backdrop-filter: blur(2px);
+    }
+
+    .age-gate h1 {
+      font-size: 2rem;
+      margin-bottom: 20px;
+      text-shadow: 0 0 5px #999;
+    }
+
+    .age-gate p { margin-bottom: 30px; color: #ccc; }
+
+    .age-gate button {
+      text-decoration: none;
+      color: #fff;
+      border: 2px solid #888;
+      padding: 10px 20px;
+      font-size: 1.2rem;
+      border-radius: 6px;
+      margin: 10px;
+      background: rgba(0,0,0,0.5);
+      transition: all 0.3s ease;
+    }
+
+    .age-gate button:hover {
+      background: #ccc;
+      color: black;
+      box-shadow: 0 0 15px #aaa;
+      cursor: pointer;
+    }
+  </style>
+</head>
+<body>
+  <div class="overlay">
+    <div class="age-gate">
+      <h1>You must be 18+ to enter</h1>
+      <p>By clicking "Enter", you confirm you are 18 years of age or older.</p>
+      <button onclick="enterSite()">Enter</button>
+      <button onclick="leaveSite()">Leave</button>
+    </div>
+  </div>
+
+  <script>
+    function enterSite() {
+      const link = "links.html";
+      try { window.open(link, "_blank"); } 
+      catch { window.location.href = link; }
+    }
+
+    function leaveSite() {
+      window.location.href = "https://google.com";
+    }
+  </script>
+</body>
+</html>
+

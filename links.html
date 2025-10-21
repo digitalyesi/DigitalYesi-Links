@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>DigitalYesi | Links</title>
+  <link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap" rel="stylesheet">
+
+  <style>
+    * { margin: 0; padding: 0; box-sizing: border-box; font-family: "Press Start 2P", system-ui; }
+
+    body, html {
+      height: 100%;
+      width: 100%;
+      margin: 0;
+      padding: 0;
+      color: #fff;
+      text-align: center;
+      overflow: hidden;
+      font-family: 'Press Start 2P', system-ui;
+      font-size: 14px;
+      
+      background: repeating-linear-gradient(
+        to right,               /* vertical stripes */
+      #000 0px,
+      #000 60px,
+      #1a1a1a 60px,
+      #1a1a1a 120px
+      );
+      background-size: 400% 100%;
+      animation: stripeScroll 12s linear infinite;
+    }
+
+    @keyframes stripeScroll {
+      from {
+        background-position: 0 0;
+      }
+      to {
+      background-position: -160px 0;
+      }
+    }
+
+    .overlay {
+      position: relative;
+      z-index: 1;
+      display: flex; flex-direction: column;
+      justify-content: center; align-items: center;
+      min-height: 100vh;
+    }
+
+    .links-container {
+      background: rgba(0, 0, 0, 0.6);
+      border-radius: 10px;
+      padding: 40px 20px;
+      width: 90%;
+      max-width: 400px;
+    }
+
+    .profile-pic {
+      width: 120px;
+      height: 120px;
+      object-fit: cover;
+      border-radius: 50%;
+      border: 2px solid #777;
+      box-shadow: 0 0 15px #999;
+      margin-bottom: 15px;
+    }
+
+    h1 {
+      font-size: 20px; /* Adjusted name font */
+      margin-bottom: 20px;
+      text-shadow: 0 0 5px #888;
+      word-break: break-word;
+    }
+
+    /* ===== SOCIAL ICONS ===== */
+    .social-icons {
+      display: flex;
+      justify-content: center;
+      gap: 10px;
+      margin: 15px 0 25px 0;
+      flex-wrap: wrap;
+    }
+
+    .social-icons img {
+      width: 30px;
+      height: 30px;
+      cursor: pointer;
+      transition: transform 0.3s ease, filter 0.3s ease;
+      filter: brightness(0.8);
+    }
+
+    .social-icons img:hover {
+      transform: scale(1.2);
+      filter: brightness(1);
+    }
+
+    /* ===== BOX LINKS ===== */
+    .link-btn {
+      display: block;
+      margin: 15px auto;
+      width: 80%;
+      max-width: 320px;
+      padding: 15px 0;
+      text-align: center;
+      font-size: 12px;
+      border-radius: 12px;
+      background: rgba(50,50,50,0.7);
+      color: #fff;
+      text-decoration: none;
+      transition: all 0.3s ease;
+      box-shadow: 0 0 10px rgba(255,255,255,0.1);
+    }
+
+    .link-btn:hover {
+      background: rgba(80,80,80,0.9);
+      transform: scale(1.05);
+    }
+
+    footer {
+      margin-top: 20px;
+      font-size: 0.7rem;
+      opacity: 0.7;
+    }
+
+    @media (max-width: 600px) {
+      .profile-pic { width: 100px; height: 100px; margin-bottom: 10px; }
+      .links-container { padding: 20px 15px; }
+      .link-btn { font-size: 11px; }
+      .social-icons img { width: 25px; height: 25px; }
+      footer { font-size: 0.6rem; }
+    }
+  </style>
+</head>
+<body>
+
+  <div class="overlay">
+    <div class="links-container">
+      <img src="yesiwilde-pfp.png" alt="Profile Picture" class="profile-pic" />
+      <h1>DIGITALYESI</h1>
+
+      <!-- Social Icons -->
+      <div class="social-icons">
+        <a href="https://instagram.com/digitalyesi" target="_blank">
+          <img src="instagram-logo.png" alt="Instagram">
+        </a>
+        <a href="https://www.tiktok.com/@yesiyandere" target="_blank">
+          <img src="tiktok-logo.png" alt="TikTok">
+        </a>
+        <a href="https://x.com/digitalyesii" target="_blank">
+          <img src="X-logo.png" alt="X">
+        </a>
+        <a href="https://throne.com/digitalyesi" target="_blank">
+          <img src="throne-logo.png" alt="Throne">
+        </a>
+      </div>
+
+      <!-- Box Links -->
+      <a href="https://onlyfans.com/digitalyesi" class="link-btn">
+        ☆ PREMIUM ONLYFANS ☆
+      </a>
+
+      <a href="https://onlyfans.com/yesifree" class="link-btn">
+        ☆ FREE ONLYFANS ☆
+      </a>
+
+      <footer>© 2025 DIGITALYESI</footer>
+    </div>
+  </div>
+
+</body>
+</html>
+
+
+
